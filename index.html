@@ -28,10 +28,12 @@
 <body>
     <nav id="header">
         <div class="left-group">
+            <div class="audio-sub"></div>
             <div class="audio-container">
-                <iframe src="https://tunein.com/embed/player/s30052/" style="width:400px; height:100px;border: none;"
+                <iframe src="https://tunein.com/embed/player/s30052/" style="width:400px; height:90px;border: none;"
                     scrolling="no" frameborder="no"></iframe>
             </div>
+        </div>
             <div class="social-icons">
                 <a href="https://www.facebook.com/JZ94.5FM" target="_blank"><img src="Assets/facebook logo.svg"
                         alt="facebook"></a>
@@ -42,7 +44,7 @@
             <img class="micro-gradient" src="assets/Micro-Gradient.svg">
         </div>
 
-        <div class="logo-container"><a href="index.html"></a><img src="branding/jz logo white.svg"
+        <div class="logo-container"><a href="index.html"><img src="branding/jz logo white.svg"
                 alt="JZ 94.5 Logo"></a></div>
 
         <ul>
@@ -105,7 +107,7 @@
     <section class="events">
         <h3>Events</h3>
         <div class="event-container">
-            <div class="carousel" data-flickity='{ "autoPlay": 2500, "pauseAutoPlayOnHover": false }'>
+            <div class="carousel" data-flickity='{ "autoPlay": 2500, "pauseAutoPlayOnHover": false,"fullscreen": true }'>
                 <div class="carousel-cell"><div class="event">
                     <img src="Assets/GrayPlaceholder.png">
                     <div class="text-container">
@@ -114,6 +116,7 @@
         
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper hendrerit sagittis. Suspendisse porta est ante, id gravida purus auctor et. Aenean ultricies sed libero ornare porta. Nulla dapibus ex ac lectus consequat, ac finibus ante pharetra. </p>
                     </div>
+                <div class="button-container"><a href=""><button>Learn More</button></a></div>    
                 </div></div> <div class="carousel-cell"><div class="event">
                     <img src="Assets/GrayPlaceholder.png">
                     <div class="text-container">
@@ -122,6 +125,7 @@
         
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper hendrerit sagittis. Suspendisse porta est ante, id gravida purus auctor et. Aenean ultricies sed libero ornare porta. Nulla dapibus ex ac lectus consequat, ac finibus ante pharetra. </p>
                     </div>
+                    <div class="button-container"><a href=""><button>Learn More</button></a></div>   
                 </div></div>
                 <div class="carousel-cell"><div class="event">
                     <img src="Assets/GrayPlaceholder.png">
@@ -131,6 +135,7 @@
         
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper hendrerit sagittis. Suspendisse porta est ante, id gravida purus auctor et. Aenean ultricies sed libero ornare porta. Nulla dapibus ex ac lectus consequat, ac finibus ante pharetra. </p>
                     </div>
+                    <div class="button-container"><a href=""><button>Learn More</button></a></div>   
                 </div></div>
                 <div class="carousel-cell"><div class="event">
                     <img src="Assets/GrayPlaceholder.png">
@@ -140,6 +145,7 @@
         
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper hendrerit sagittis. Suspendisse porta est ante, id gravida purus auctor et. Aenean ultricies sed libero ornare porta. Nulla dapibus ex ac lectus consequat, ac finibus ante pharetra. </p>
                     </div>
+                    <div class="button-container"><a href=""><button>Learn More</button></a></div>   
                 </div></div>
               </div> 
         </div>
@@ -164,7 +170,7 @@
     <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-            if (scroll > 100) {
+            if (scroll > 0) {
                 $("#header").addClass("scrolled");
             } else {
                 $("#header").removeClass("scrolled");
